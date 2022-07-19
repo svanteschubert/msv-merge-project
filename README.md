@@ -29,18 +29,14 @@ Therefore the original source code repository is no longer accessible, but there
 1. A **GitHub fork from Kohsuke Kawaguchi** the former Code Owner at Oracle - [https://github.com/kohsuke/msv](https://github.com/kohsuke/msv).
 The release with all the sources and the most advanced changes.
 2. A **Maven release from RedHat** including Source Code doing some bug fixes. Actually, it has been two Early Access (EA) and one General Availablity (GA) releases, but the sources do not differ among the EA & GA releases. ***NOTE:*** The sources and bash scripts are at [./docs/msv_redhat](./docs/msv_redhat).
-
-    A. Maven Repo [https://maven.repository.redhat.com/earlyaccess/all/net/java/dev/msv/](https://maven.repository.redhat.com/earlyaccess/all/net/java/dev/msv/) including:
-
-        1. [msv-core/](https://maven.repository.redhat.com/earlyaccess/all/net/java/dev/msv/msv-core/2011.1-redhat-2/msv-core-2011.1-redhat-2-sources.jar)
-        2. [msv-generator/](https://maven.repository.redhat.com/earlyaccess/all/net/java/dev/msv/msv-generator/2011.1-redhat-2/msv-generator-2011.1-redhat-2-sources.jar)
-        3. [msv-rngconverter/](https://maven.repository.redhat.com/earlyaccess/all/net/java/dev/msv/msv-rngconverter/2011.1-redhat-2/msv-rngconverter-2011.1-redhat-2-sources.jar)
-        4. [msv-testharness/](https://maven.repository.redhat.com/earlyaccess/all/net/java/dev/msv/msv-testharness/2011.1-redhat-2/msv-testharness-2011.1-redhat-2-sources.jar)
-
-    B. Maven Repo [https://maven.repository.redhat.com/ga/net/java/dev/msv/msv-testharness/2011.1-redhat-2/](https://maven.repository.redhat.com/ga/net/java/dev/msv/msv-testharness/2011.1-redhat-2/) including only two projects:
-
-        1. [msv-core/](https://maven.repository.redhat.com/ga/net/java/dev/msv/msv-core/2011.1-redhat-2/msv-core-2011.1-redhat-2-sources.jar)
-        2. [msv-testharness/](https://maven.repository.redhat.com/ga/net/java/dev/msv/msv-testharness/2011.1-redhat-2/msv-testharness-2011.1-redhat-2-sources.jar)
+   1. Maven Repo [https://maven.repository.redhat.com/earlyaccess/all/net/java/dev/msv/](https://maven.repository.redhat.com/earlyaccess/all/net/java/dev/msv/) including
+      1. [msv-core/](https://maven.repository.redhat.com/earlyaccess/all/net/java/dev/msv/msv-core/2011.1-redhat-2/msv-core-2011.1-redhat-2-sources.jar)
+      2. [msv-generator/](https://maven.repository.redhat.com/earlyaccess/all/net/java/dev/msv/msv-generator/2011.1-redhat-2/msv-generator-2011.1-redhat-2-sources.jar)
+      3. [msv-rngconverter/](https://maven.repository.redhat.com/earlyaccess/all/net/java/dev/msv/msv-rngconverter/2011.1-redhat-2/msv-rngconverter-2011.1-redhat-2-sources.jar)
+      4. [msv-testharness/](https://maven.repository.redhat.com/earlyaccess/all/net/java/dev/msv/msv-testharness/2011.1-redhat-2/msv-testharness-2011.1-redhat-2-sources.jar)
+   2. Maven Repo [https://maven.repository.redhat.com/ga/net/java/dev/msv/msv-testharness/2011.1-redhat-2/](https://maven.repository.redhat.com/ga/net/java/dev/msv/msv-testharness/2011.1-redhat-2/) including only two projects:
+      1. [msv-core/](https://maven.repository.redhat.com/ga/net/java/dev/msv/msv-core/2011.1-redhat-2/msv-core-2011.1-redhat-2-sources.jar)
+      2. [msv-testharness/](https://maven.repository.redhat.com/ga/net/java/dev/msv/msv-testharness/2011.1-redhat-2/msv-testharness-2011.1-redhat-2-sources.jar)
 
 3. **Maven releases from Oracle** doing bug fixes and adjusting the copyright header correctly to BSD license.
 ***NOTE:*** The sources and bash scripts are at [./docs/msv_oracle](./docs/msv_oracle).
