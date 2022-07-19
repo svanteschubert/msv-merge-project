@@ -1,0 +1,45 @@
+<!--
+ DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+
+ Copyright (c) 2001-2013 Oracle and/or its affiliates. All rights reserved.
+
+ Redistribution and  use in  source and binary  forms, with  or without
+ modification, are permitted provided that the following conditions are
+ met:
+
+ - Redistributions  of  source code  must  retain  the above  copyright
+   notice, this list of conditions and the following disclaimer.
+
+ - Redistribution  in binary  form must  reproduct the  above copyright
+   notice, this list of conditions  and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+
+ Neither  the  name   of  Sun  Microsystems,  Inc.  or   the  names  of
+ contributors may be  used to endorse or promote  products derived from
+ this software without specific prior written permission.
+ 
+ This software is provided "AS IS," without a warranty of any kind. ALL
+ EXPRESS  OR   IMPLIED  CONDITIONS,  REPRESENTATIONS   AND  WARRANTIES,
+ INCLUDING  ANY  IMPLIED WARRANTY  OF  MERCHANTABILITY,  FITNESS FOR  A
+ PARTICULAR PURPOSE  OR NON-INFRINGEMENT, ARE HEREBY  EXCLUDED. SUN AND
+ ITS  LICENSORS SHALL  NOT BE  LIABLE  FOR ANY  DAMAGES OR  LIABILITIES
+ SUFFERED BY LICENSEE  AS A RESULT OF OR  RELATING TO USE, MODIFICATION
+ OR DISTRIBUTION OF  THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL
+ SUN OR ITS  LICENSORS BE LIABLE FOR ANY LOST  REVENUE, PROFIT OR DATA,
+ OR  FOR  DIRECT,   INDIRECT,  SPECIAL,  CONSEQUENTIAL,  INCIDENTAL  OR
+ PUNITIVE  DAMAGES, HOWEVER  CAUSED  AND REGARDLESS  OF  THE THEORY  OF
+ LIABILITY, ARISING  OUT OF  THE USE OF  OR INABILITY TO  USE SOFTWARE,
+ EVEN IF SUN HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+-->
+<HTML><BODY>
+<P>    reads TREX grammar with "label 
+annotation".</P>
+<P>"label annotation" is a proprietary extension to TREX by MSV.</P>
+<H1>How it works</H1>
+<P>With this extension, &lt;element&gt; pattern in TREX pattern can have "label" 
+attribute in http://www.sun.com/xml/msv/trex-type 
+namespace.</P><PRE>&lt;grammar xmlns:ext="http://www.sun.com/xml/msv/trex-type"&gt;<BR>  &lt;start&gt;<BR>    &lt;element name="root" ext:label="root"&gt;<BR>      &lt;choice&gt;<BR>        &lt;element name="child1"&gt;&lt;empty /&gt;&lt;/element&gt;<BR>        &lt;element name="child2" ext:label="foo"&gt;&lt;empty /&gt;&lt;/element&gt;<BR>      &lt;/choice&gt;<BR>    &lt;/element&gt;<BR>  &lt;/start&gt;<BR>&lt;/grammar&gt;</PRE>
+<P>Once&nbsp;label is specified to &lt;element&gt; pattern,&nbsp;application can 
+call Verifier.getCurrentElementType method to obtain a&nbsp;reference 
+to&nbsp;TypedElementPattern object, which has label field.</P><PRE>void startElement( ... ) {<BR>  Object o = verifier.getCurrentElementType();<BR>  if(!( o instanceof TypedElementPattern ))<BR>    ... // the current element does not have 'label' attribute.<BR>  else {<BR>    String labelOfTheCurrentElement = ((TypedElementPattern)o).label;<BR>    ... // do whatever useful<BR>  }<BR>}</PRE>
+</BODY></HTML>
