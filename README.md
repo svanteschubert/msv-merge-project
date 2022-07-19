@@ -38,8 +38,7 @@ The release with all the sources and the most advanced changes.
       1. [msv-core/](https://maven.repository.redhat.com/ga/net/java/dev/msv/msv-core/2011.1-redhat-2/msv-core-2011.1-redhat-2-sources.jar)
       2. [msv-testharness/](https://maven.repository.redhat.com/ga/net/java/dev/msv/msv-testharness/2011.1-redhat-2/msv-testharness-2011.1-redhat-2-sources.jar)
 
-3. **Maven releases from Sun/Oracle**, where Oracle finally adjusting the copyright header correctly to BSD license on the official Maven Central repository.
-There had been several releases from June 2009 to June 2013 [see ./docs/msv_oracle](./docs/msv_oracle). Oracle official bought Sun at January 27, 2010, therefore only the first was by Sun.
+3. **Maven releases from Sun/Oracle**: There had been several releases from June 2009 to June 2013. Oracle official bought Sun at January 27, 2010, therefore only the first was by Sun. Most interesting are the 4 releases Oracle did 2013, which are not part of the GitHub fork from Kohsuke Kawaguchi. For instance, Oracle were adjusting the copyright header correctly to BSD license on the official Maven Central repository jared sources [please find the five 2013 releases from Oracle and the prior one made by KK's GitHub at ./docs/msv_oracle](./docs/msv_oracle).
 </br>***NOTE:*** The Java sources from the Maven source JAR and bash scripts to download, unload and normalize are at [./docs/msv_oracle](./docs/msv_oracle).
       1. [msv-core/](https://mvnrepository.com/artifact/net.java.dev.msv/msv-core) - full 9 releases including the two 2010 releases
       2. [msv-generator/](https://mvnrepository.com/artifact/net.java.dev.msv/msv-generator) - missing the two 2010 releases
