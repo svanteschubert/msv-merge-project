@@ -24,18 +24,26 @@ MSV consists of a number of sub-projects. Each sub-projects has its own director
 
 The primary source code origin is at former Sun/Oracle at [http://java.net/downloads/msv/releases/](http://java.net/downloads/msv/releases/), which redirects to [https://www.oracle.com/splash/java.net/maintenance/index.html](https://www.oracle.com/splash/java.net/maintenance/index.html), where MSV can be found among [https://javaee.github.io/other-migrated-projects.html](https://javaee.github.io/other-migrated-projects.html), where it is stated at the top: "The following projects are archived. If you have an interest in any of these projects or technologies, please contact us through through our discussion list at glassfish at javaee dot groups dot io (you must be a member of javaee dot groups dot io to post messages)".
 
-Therefore the original source code repository is no longer accessible, but there is 
+Therefore the original source code repository is no longer accessible, but there are the following source origins:
 
-1. A GitHub fork from Kohsuke Kawaguchi the former Code Owner at Oracle - [https://github.com/kohsuke/msv](https://github.com/kohsuke/msv).
+1. A **GitHub fork from Kohsuke Kawaguchi** the former Code Owner at Oracle - [https://github.com/kohsuke/msv](https://github.com/kohsuke/msv).
 The release with all the sources and the most advanced changes.
-2. A Maven release from RedHat including Source Code doing some bug fixes.
-Actually, it has been two Early Access (EA) and one General Availablity (GA) releases, but the sources do not differ among the releases.
-    a. https://maven.repository.redhat.com/earlyaccess/all/net/java/dev/msv/ including:
-        * msv-core/
-        * msv-generator/
-        * msv-rngconverter/
-        * [msv-testharness/](https://maven.repository.redhat.com/earlyaccess/all/net/java/dev/msv/msv-testharness/2011.1-redhat-2/msv-testharness-2011.1-redhat-2-sources.jar)
-    b. https://maven.repository.redhat.com/ga/net/java/dev/msv/msv-testharness/2011.1-redhat-2/ including only two projects 
-        * msv-core/
-        * [msv-testharness/](https://maven.repository.redhat.com/ga/net/java/dev/msv/msv-testharness/2011.1-redhat-2/msv-testharness-2011.1-redhat-2-sources.jar)
-3. Maven releases from Oracle doing bug fixes and adjusting the copyright header correctly to BSD license.
+2. A **Maven release from RedHat** including Source Code doing some bug fixes. Actually, it has been two Early Access (EA) and one General Availablity (GA) releases, but the sources do not differ among the EA & GA releases:
+
+    A. Maven Repo [https://maven.repository.redhat.com/earlyaccess/all/net/java/dev/msv/](https://maven.repository.redhat.com/earlyaccess/all/net/java/dev/msv/) including:
+
+        1. [msv-core/](https://maven.repository.redhat.com/earlyaccess/all/net/java/dev/msv/msv-core/2011.1-redhat-2/msv-core-2011.1-redhat-2-sources.jar)
+        2. [msv-generator/](https://maven.repository.redhat.com/earlyaccess/all/net/java/dev/msv/msv-generator/2011.1-redhat-2/msv-generator-2011.1-redhat-2-sources.jar)
+        3. [msv-rngconverter/](https://maven.repository.redhat.com/earlyaccess/all/net/java/dev/msv/msv-rngconverter/2011.1-redhat-2/msv-rngconverter-2011.1-redhat-2-sources.jar)
+        4. [msv-testharness/](https://maven.repository.redhat.com/earlyaccess/all/net/java/dev/msv/msv-testharness/2011.1-redhat-2/msv-testharness-2011.1-redhat-2-sources.jar)
+
+    B. Maven Repo [https://maven.repository.redhat.com/ga/net/java/dev/msv/msv-testharness/2011.1-redhat-2/](https://maven.repository.redhat.com/ga/net/java/dev/msv/msv-testharness/2011.1-redhat-2/) including only two projects:
+
+        1. [msv-core/](https://maven.repository.redhat.com/ga/net/java/dev/msv/msv-core/2011.1-redhat-2/msv-core-2011.1-redhat-2-sources.jar)
+        2. [msv-testharness/](https://maven.repository.redhat.com/ga/net/java/dev/msv/msv-testharness/2011.1-redhat-2/msv-testharness-2011.1-redhat-2-sources.jar)
+
+3. **Maven releases from Oracle** doing bug fixes and adjusting the copyright header correctly to BSD license.
+
+## MSV Maven Deployment Rights
+
+Were received via from Kohsuke Kawaguchi the former Code Owner at Oracle, see [https://issues.sonatype.org/browse/OSSRH-52887](https://issues.sonatype.org/browse/OSSRH-52887).
