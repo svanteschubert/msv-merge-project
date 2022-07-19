@@ -22,6 +22,17 @@ MSV consists of a number of sub-projects. Each sub-projects has its own director
 
 ## MSV Source Code Origins
 
+### Summary on MSV Source Code Origin
+
+The original code repository from Sun/Oracle is no longer accessible, but [a fork exists from the former Code Owner Kohsuke Kawaguchi (KK) at Oracle](https://github.com/kohsuke/msv).
+
+* KK's fork embraces the Maven release from 2010.
+* There had been a Maven release 2011 by RedHat. The changes are only accessible by the sources taken from the source JAR of their Maven repository.
+* There had been several Maven releases 2013 by Oracle. The changes are only accessible by the sources taken from the source JAR of the Maven Central repository.
+* KK's fork is at the moment being located and maintained on branches at [https://github.com/xmlark/msv/](https://github.com/xmlark/msv/).
+
+### Details on MSV Source Code Origin
+
 The primary source code origin is at former Sun/Oracle at [http://java.net/downloads/msv/releases/](http://java.net/downloads/msv/releases/), which redirects to [https://www.oracle.com/splash/java.net/maintenance/index.html](https://www.oracle.com/splash/java.net/maintenance/index.html), where MSV can be found among [https://javaee.github.io/other-migrated-projects.html](https://javaee.github.io/other-migrated-projects.html), where it is stated at the top: "*The following projects are archived. If you have an interest in any of these projects or technologies, please contact us through through our discussion list at glassfish at javaee dot groups dot io (you must be a member of javaee dot groups dot io to post messages)*".
 
 Therefore the original source code repository is no longer accessible, but there are the following source origins:
