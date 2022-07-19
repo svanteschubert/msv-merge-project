@@ -6,7 +6,7 @@ This project provides tools and documentation about this process.
 ## MSV Sub Projects
 
 MSV consists of a number of sub-projects. Each sub-projects has its own directory, its own build script, etc.
-***NOTE:*** Not all forks and releases embrace all the projects below.
+</br>***NOTE:*** Not all forks and releases embrace all the projects below.
 
 | sub-project   | description                                                                                                                                |
 |:--------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
@@ -22,7 +22,7 @@ MSV consists of a number of sub-projects. Each sub-projects has its own director
 
 ## MSV Source Code Origins
 
-The primary source code origin is at former Sun/Oracle at [http://java.net/downloads/msv/releases/](http://java.net/downloads/msv/releases/), which redirects to [https://www.oracle.com/splash/java.net/maintenance/index.html](https://www.oracle.com/splash/java.net/maintenance/index.html), where MSV can be found among [https://javaee.github.io/other-migrated-projects.html](https://javaee.github.io/other-migrated-projects.html), where it is stated at the top: "The following projects are archived. If you have an interest in any of these projects or technologies, please contact us through through our discussion list at glassfish at javaee dot groups dot io (you must be a member of javaee dot groups dot io to post messages)".
+The primary source code origin is at former Sun/Oracle at [http://java.net/downloads/msv/releases/](http://java.net/downloads/msv/releases/), which redirects to [https://www.oracle.com/splash/java.net/maintenance/index.html](https://www.oracle.com/splash/java.net/maintenance/index.html), where MSV can be found among [https://javaee.github.io/other-migrated-projects.html](https://javaee.github.io/other-migrated-projects.html), where it is stated at the top: "*The following projects are archived. If you have an interest in any of these projects or technologies, please contact us through through our discussion list at glassfish at javaee dot groups dot io (you must be a member of javaee dot groups dot io to post messages)*".
 
 Therefore the original source code repository is no longer accessible, but there are the following source origins:
 
